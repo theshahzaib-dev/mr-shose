@@ -1,6 +1,7 @@
 import React from 'react';
 import { Menu, Search, Heart, ShoppingBag } from 'lucide-react';
 import { BRAND_CONFIG, NAV_LINKS } from '@/lib/constants/config';
+import Link from 'next/link';
 
 interface HeaderNavigationProps {
   isScrolled: boolean;
@@ -74,7 +75,7 @@ export const HeaderNavigation: React.FC<HeaderNavigationProps> = ({
           {/* Center Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8" aria-label="Main Navigation">
             {NAV_LINKS.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 onClick={(e) => {
@@ -90,7 +91,7 @@ export const HeaderNavigation: React.FC<HeaderNavigationProps> = ({
                   </span>
                 )}
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#E5A83B] transition-all duration-300 group-hover:w-full" />
-              </a>
+              </Link>
             ))}
           </nav>
 

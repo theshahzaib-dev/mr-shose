@@ -17,7 +17,7 @@ export interface HeroSlide {
   primaryAction: { text: string; href: string };
   secondaryAction: { text: string; href: string };
   accentColor: string;
-  shoeType: 'formal' | 'sneaker' | 'runner';
+  shoeType: 'formal' | 'sneaker' | 'runner' | 'outdoor' | 'traditional' | 'women';
   bgGradient: string;
   thumbnail:string;
 }

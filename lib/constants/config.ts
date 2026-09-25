@@ -15,14 +15,14 @@ export const HERO_SLIDES: HeroSlide[] = [
     eyebrow: "NEW RELEASE 2026",
     title: "AIR ULTRA FLY",
     subtitle: "SPEED & PRECISION",
-    description: "engineered with reactive carbon foam and breathable weave upper for ultimate marathon performance and urban agility.",
+    description: "Engineered with reactive carbon foam and breathable weave upper for ultimate marathon performance and urban agility.",
     badge: "15% OFF INTRO SPECIAL",
     primaryAction: { text: "Explore Collection", href: "#new-arrivals" },
     secondaryAction: { text: "Order on WhatsApp", href: "#whatsapp" },
     accentColor: "#E5A83B",
     shoeType: "runner",
     bgGradient: "from-[#121212] via-[#1a1815] to-[#262118]",
-    thumbnail:'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&q=80&w=800'
+    thumbnail: 'assets/images/slider/new.png'
   },
   {
     id: "slide-2",
@@ -36,7 +36,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     accentColor: "#D49326",
     shoeType: "formal",
     bgGradient: "from-[#18130e] via-[#241c12] to-[#121212]",
-    thumbnail:'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&q=80&w=800',
+    thumbnail: 'assets/images/slider/formal.png'
   },
   {
     id: "slide-3",
@@ -50,17 +50,45 @@ export const HERO_SLIDES: HeroSlide[] = [
     accentColor: "#E5A83B",
     shoeType: "sneaker",
     bgGradient: "from-[#111113] via-[#1b1c20] to-[#121212]",
-    thumbnail:'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&q=80&w=800',
+    thumbnail: 'assets/images/slider/sneker.png'
+  },
+  {
+    id: "slide-4",
+    eyebrow: "TRADITIONAL HERITAGE",
+    title: "BALOCHI CHAWAT",
+    subtitle: "AUTHENTIC CRAFTSMANSHIP",
+    description: "Hand-stitched by master artisans using genuine leather and classic Baloch thread embroidery for unmatched cultural elegance.",
+    badge: "CULTURAL HERITAGE COLLECTION",
+    primaryAction: { text: "Explore Heritage Series", href: "#balochi" },
+    secondaryAction: { text: "Order on WhatsApp", href: "#whatsapp" },
+    accentColor: "#C25E00",
+    shoeType: "traditional",
+    bgGradient: "from-[#1f130b] via-[#2b1a0e] to-[#121212]",
+    thumbnail: 'assets/images/slider/balouchi.png'
+  },
+  {
+    id: "slide-5",
+    eyebrow: "WOMEN'S ELEGANCE",
+    title: "VELVET EMBROIDERED KHUSSA",
+    subtitle: "GRACE & GRANDEUR",
+    description: "Exquisitely hand-embellished velvet khussa featuring gold tilla work, padded double-sole support, and traditional royal aesthetics.",
+    badge: "WOMEN'S EXCLUSIVE COLLECTION",
+    primaryAction: { text: "Shop Women Collection", href: "#women" },
+    secondaryAction: { text: "Order on WhatsApp", href: "#whatsapp" },
+    accentColor: "#E05297",
+    shoeType: "women",
+    bgGradient: "from-[#1f1019] via-[#2b1422] to-[#121212]",
+    thumbnail: 'assets/images/slider/women.png'
   }
 ];
 
 export const NAV_LINKS: NavLink[] = [
-  { name: "New Arrivals", href: "#new-arrivals" },
-  { name: "Men", href: "#men" },
-  { name: "Women", href: "#women" },
-  { name: "Sneakers", href: "#sneakers" },
-  { name: "Formal", href: "#formal" },
-  { name: "Sale", href: "#sale", badge: "UP TO 40%" }
+  { name: "New Arrivals", href: "/products?category=new-arrivals" },
+  { name: "Men", href: "/products?category=men" },
+  { name: "Women", href: "/products?category=women" },
+  { name: "Sneakers", href: "/products?category=sneakers" },
+  { name: "Formal", href: "/products?category=formal" },
+  { name: "Sale", href: "/products?category=sale", badge: "UP TO 40%" }
 ];
 
 export const SEARCH_SUGGESTIONS: SearchSuggestion[] = [
