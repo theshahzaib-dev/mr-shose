@@ -55,7 +55,7 @@ export default function App() {
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState<boolean>(false);
   const [showCodeInspector, setShowCodeInspector] = useState<boolean>(false);
   const [isSearching, setIsSearching] = useState<boolean>(false);
-  const [categoryFilter, setCategoryFilter] = useState([]);
+  const [categoryFilter, setCategoryFilter] = useState<string>("");
 
   useEffect(() => {
     setIsSearching(true);
